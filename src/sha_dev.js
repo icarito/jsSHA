@@ -2234,13 +2234,7 @@ var SUPPORTED_ALGS = 8 | 4 | 2 | 1;
 		};
 	};
 
-	if (("function" === typeof define) && (define["amd"])) /* AMD Support */
-	{
-		define(function()
-		{
-			return jsSHA;
-		});
-	} else if ("undefined" !== typeof exports) /* Node Support */
+	if ("undefined" !== typeof exports) /* Node Support */
 	{
 		if (("undefined" !== typeof module) && module["exports"])
 		{
